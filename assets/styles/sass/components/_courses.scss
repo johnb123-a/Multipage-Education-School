@@ -1,0 +1,61 @@
+%flexInit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.courses {
+  margin-top: 15rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .container {
+      &__course {
+        background: $color-bg-2;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: $transition;
+        @extend %flexInit;
+        justify-content: center;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        &:hover {
+          background-color: transparent;
+          border-color: $color-primary;
+        }
+        position: relative;
+        .course {
+          &__info {
+            padding: 2rem;
+            @extend %flexInit;
+            justify-content: flex-start;
+            flex: 1;
+            &--title {
+              font-size: 2.5rem;
+            }
+            &--paragraph {
+              margin: 1.5rem 0 6rem;
+              text-align: start;
+              font-size: 1.5rem;
+              line-height: 1.8;
+            }
+            &--btn {
+              align-self: flex-end;
+              margin: 1rem 0rem;
+              position: absolute;
+              bottom: 0;
+            }
+          }
+          &__image {
+            padding: 1.5rem;
+            img {
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
