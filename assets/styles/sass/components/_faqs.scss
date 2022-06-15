@@ -1,0 +1,52 @@
+.faqs {
+  background-color: $color-bg-2;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.3);
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    .container__faq {
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      height: min-content;
+      background: $color-primary;
+      cursor: pointer;
+
+      .faq {
+        &__icon {
+          align-self: flex-start;
+          font-size: 1.8rem;
+        }
+
+        &__question-answer {
+          align-self: flex-start;
+
+          &--title {
+            font-size: 1.8rem;
+            line-height: 1.5;
+          }
+
+          &--paragraph {
+            margin: 1rem;
+            font-size: 1.2rem;
+            line-height: 2;
+            display: none;
+          }
+        }
+      }
+
+      //Javascript
+      &.open {
+        .faq {
+          &__question-answer {
+            &--paragraph {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
