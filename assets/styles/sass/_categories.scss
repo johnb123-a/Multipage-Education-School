@@ -1,0 +1,18 @@
+.categories {
+    background: var(--color-bg-1);
+
+    &__container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 4rem;
+        &__left {
+            background-color: red;
+
+            &--title {
+                line-height: 1;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+

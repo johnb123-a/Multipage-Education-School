@@ -7,15 +7,17 @@
     font-weight: 500;
     transition: var(--transition);
     font-size: 2rem;
+    
+    &:hover {
+        background: transparent;
+        color: var(--color-white);
+        border-color: var(--color-white);
+    }
+
+    &--primary {
+        background: var(--color-danger);
+        color: var(--color-white);
+    }
 }
 
-.u-btn:hover {
-    background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
-}
 
-.u-btn--primary {
-    background: var(--color-danger);
-    color: var(--color-white);
-}

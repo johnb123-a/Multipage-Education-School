@@ -11,9 +11,9 @@
 }
 
 :root {
+    --color-bg-1: #1f2641;
     --color-bg-2: #2e3267;
     --color-bg-3: #424890;
-    --color-bg: #1f2641;
     --color-black: #000;
     --color-danger-variant: rgba(247, 88, 66, .4);
     --color-danger: #f75842;
@@ -38,7 +38,7 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.7;
     color: var(--color-white);
-    background: var(--color-bg);
+    background: var(--color-bg-1);
 }
 
 section {
