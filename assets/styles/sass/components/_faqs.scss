@@ -17,7 +17,9 @@
       .faq {
         &__icon {
           align-self: flex-start;
-          font-size: 1.8rem;
+          font-size: 2rem;
+          transition: $transition;
+          color: $color-success;
         }
 
         &__question-answer {
@@ -29,8 +31,12 @@
           }
 
           &--paragraph {
-            margin: 1rem;
+            background: $color-bg-3--variant;
+            border-radius: 5px;
+            margin: 0.5rem;
+            padding: 1rem 1.5rem;
             font-size: 1.2rem;
+            font-weight: 600;
             line-height: 2;
             display: none;
           }
@@ -39,7 +45,12 @@
 
       //Javascript
       &.open {
+        height: auto;
         .faq {
+          &__icon {
+            transform: rotate(45deg);
+            color: $color-danger;
+          }
           &__question-answer {
             &--paragraph {
               display: block;
