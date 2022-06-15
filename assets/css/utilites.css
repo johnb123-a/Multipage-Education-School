@@ -6,6 +6,7 @@
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
+    font-size: 2rem;
 }
 
 .u-btn:hover {
