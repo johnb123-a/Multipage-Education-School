@@ -1,5 +1,5 @@
 .categories {
-  background: var(--color-bg-2);
+  background: $color-bg-2;
   height: 40rem;
 
   &__container {
@@ -28,10 +28,10 @@
       gap: 1.5rem;
 
       &--category {
-        background: var(--color-bg-3);
+        background: $color-bg-3;
         padding: 2rem;
         border-radius: 2rem;
-        transition: var(--transition);
+        transition: $transition;
         &:hover {
           box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
           z-index: 1;
@@ -40,7 +40,7 @@
         &:nth-child(2) {
           .category {
             &__icon {
-              background: var(--color-danger);
+              background: $color-danger;
             }
           }
         }
@@ -48,7 +48,7 @@
         &:nth-child(3) {
           .category {
             &__icon {
-              background: var(--color-success);
+              background: $color-success;
             }
           }
         }
@@ -56,7 +56,7 @@
         &:nth-child(4) {
           .category {
             &__icon {
-              background: var(--color-warning);
+              background: $color-warning;
             }
           }
         }
@@ -64,14 +64,14 @@
         &:nth-child(5) {
           .category {
             &__icon {
-              background: var(--color-success);
+              background: $color-success;
             }
           }
         }
 
         .category {
           &__icon {
-            background: var(--color-primary);
+            background: $color-primary;
             padding: 0 2rem;
             width: 10%;
             display: flex;

@@ -5,7 +5,7 @@
   "main": "./assest/js/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:sass": "node-sass assets/styles/sass/index.scss assets/styles/css/style.css -w"
+    "watch:sass": "node-sass -w assets/styles/sass/index.scss assets/styles/css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",

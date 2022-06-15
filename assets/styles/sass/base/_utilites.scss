@@ -1,0 +1,22 @@
+.u-btn {
+  display: inline-block;
+  background: $color-white;
+  color: $color-black;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: $transition;
+  font-size: 2rem;
+
+  &:hover {
+    background: transparent;
+    color: $color-white;
+    border-color: $color-white;
+  }
+
+  &--primary {
+    background: $color-danger;
+    color: $color-white;
+  }
+}

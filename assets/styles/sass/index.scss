@@ -1,5 +1,10 @@
-@import "./base";
-@import "./utilites";
-@import "./nav";
-@import "./header";
-@import "./categories";
+@import "./abstracts/variables";
+
+@import "./base/base";
+@import "./base/utilites";
+
+@import "./layouts/header";
+
+@import "./components/nav";
+@import "./components/categories";
+@import "./components/courses";
