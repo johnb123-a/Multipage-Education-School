@@ -115,6 +115,9 @@ img {
       color: var(--color-bg-2); }
   .nav .container--button {
     display: none; }
+  .nav.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
 
 .header {
   position: relative;
