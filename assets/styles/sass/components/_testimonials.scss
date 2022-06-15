@@ -1,0 +1,80 @@
+.testimonials__container {
+  overflow-x: hidden;
+  position: relative;
+  margin-bottom: 5rem;
+
+  .container__testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+
+    &:last-child .testimonial__body::before {
+      left: 47%;
+    }
+    &:hover {
+      cursor: -webkit-grab;
+      cursor: grab;
+    }
+
+    .testimonial {
+      &__avatar {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 2rem;
+        outline: 2px solid transparent;
+        border: 1rem solid transparent;
+        transition: $transition;
+
+        &:hover {
+          border: 1rem solid $color-bg-2;
+          outline: 2px solid $color-white;
+        }
+      }
+
+      &__info {
+        text-align: center;
+        &--name {
+          font-size: 2rem;
+        }
+        &--tag {
+          font-size: 1.5rem;
+          color: $color-bg-3--variant;
+        }
+      }
+
+      &__body {
+        background: $color-primary;
+        width: 70%;
+        padding: 2rem;
+        margin-top: 4rem;
+        position: relative;
+        border-radius: 15px;
+        &--content {
+          font-size: 1.5rem;
+        }
+      }
+
+      &__body::before {
+        content: "";
+        display: block;
+        background: linear-gradient(
+          135deg,
+          transparent,
+          $color-primary,
+          $color-primary,
+          $color-primary
+        );
+        width: 6rem;
+        height: 6rem;
+        position: absolute;
+        left: 48%;
+        top: -1.5rem;
+        transform: rotate(45deg);
+        z-index: -1;
+      }
+    }
+  }
+}

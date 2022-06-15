@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Document</title>
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav class="nav">
@@ -422,10 +427,10 @@
       </div>
     </section>
       <!--    ###################      -->
-    <section class="container testimonials__container">
+    <section class="container testimonials__container mySwiper">
       <h2>Students Testimonials</h2>
-      <div>
-          <article class="container__testimonial">
+      <div class="swiper-wrapper">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar7.jpg" alt="">
             </div>
@@ -444,7 +449,7 @@
             </div>
           </article>
 
-          <article class="container__testimonial">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar1.jpg" alt="">
             </div>
@@ -462,7 +467,7 @@
             </div>
           </article>
 
-          <article class="container__testimonial">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar3.jpg" alt="">
             </div>
@@ -482,7 +487,7 @@
             </div>
           </article>
 
-          <article class="container__testimonial">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar4.jpg" alt="">
             </div>
@@ -503,7 +508,7 @@
             </div>
           </article>
 
-          <article class="container__testimonial">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar5.jpg" alt="">
             </div>
@@ -522,7 +527,7 @@
             </div>
           </article>
 
-          <article class="container__testimonial">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar6.jpg" alt="">
             </div>
@@ -540,7 +545,7 @@
             </div>
           </article>
 
-          <article class="container__testimonial">
+          <article class="container__testimonial swiper-slide">
             <div class="testimonial__avatar">
               <img src="./assets/images/avatar2.jpg" alt="">
             </div>
@@ -556,14 +561,17 @@
               </p>
             </div>
           </article>
-
+  
       </div>
+      <div class="swiper-pagination"></div>
 
     </section>
 
 
     </main>
-
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
     <script src="./assets/js/main.js"></script>  
   </body>
 </html>
