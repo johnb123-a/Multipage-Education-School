@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 11;
-
+  color: $color-white;
   &__container {
     height: 100%;
     display: flex;
@@ -22,13 +22,16 @@
       display: flex;
       align-items: center;
       gap: 4rem;
-      a {
-        font-size: 1.5rem;
+      a:visited,
+      a:link {
+        font-size: 2rem;
         transition: color 400ms ease;
+        color: inherit;
       }
 
-      a:hover {
-        color: $color-bg-2;
+      a:hover,
+      a:active {
+        color: $color-bg-3--variant;
       }
     }
 

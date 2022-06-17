@@ -1,0 +1,69 @@
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: $container-width-md;
+  }
+
+  .nav {
+    &__container {
+      .container {
+        &--button {
+          display: inline-block;
+          background: transparent;
+          font-size: 3rem;
+          color: $color-white;
+          cursor: pointer;
+        }
+        &__menu {
+          position: fixed;
+          top: 8rem;
+          right: 5%;
+          height: fit-content;
+          width: 26rem;
+          flex-direction: column;
+          display: none;
+          gap: 0;
+          li {
+            width: 100%;
+            height: 6rem;
+            a:link,
+            a:visited {
+              background: $color-primary;
+              box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+              width: 100%;
+              height: 100%;
+              display: grid;
+              place-items: center;
+              transition: $transition;
+              &:hover,
+              &:active {
+                background: $color-bg-3;
+                color: $color-white;
+              }
+            }
+          }
+        }
+      }
+      #close-menu-btn {
+        display: none;
+      }
+    }
+  }
+}

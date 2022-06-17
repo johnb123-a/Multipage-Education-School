@@ -4,9 +4,12 @@
 @import "./base/utilites";
 
 @import "./layouts/header";
+@import "./layouts/footer";
 
 @import "./components/nav";
 @import "./components/categories";
 @import "./components/courses";
 @import "./components/faqs";
 @import "./components/testimonials";
+
+@import "./abstracts/media";
