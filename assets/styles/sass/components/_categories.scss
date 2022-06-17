@@ -1,15 +1,13 @@
 .categories {
   background: $color-bg-2;
   height: 40rem;
-
   &__container {
     display: grid;
     grid-template-columns: 40% 60%;
     // gap: 4rem;
 
     .container__left {
-      margin: 4rem 4rem 0 0;
-      //   background-color: red;
+      margin: 0rem 4rem 0 0;
       &--paragraph {
         margin: 1rem 0 3rem;
         font-size: 1.5rem;
@@ -17,6 +15,7 @@
 
       &--title {
         line-height: 1;
+        font-size: 4rem;
         margin-bottom: 3rem;
       }
     }
@@ -32,9 +31,17 @@
         padding: 2rem;
         border-radius: 2rem;
         transition: $transition;
-        &:hover {
+        &:hover,
+        &:active {
           box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
           z-index: 1;
+        }
+
+        &--title {
+          font-size: 2.3rem;
+        }
+        &--paragraph {
+          font-size: 1.5rem;
         }
 
         &:nth-child(2) {

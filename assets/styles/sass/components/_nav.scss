@@ -17,7 +17,6 @@
     &--tittle {
       text-decoration: none;
     }
-
     &__menu {
       display: flex;
       align-items: center;
@@ -33,10 +32,6 @@
       a:active {
         color: $color-bg-3--variant;
       }
-    }
-
-    &--button {
-      display: none;
     }
   }
   // JavaScript

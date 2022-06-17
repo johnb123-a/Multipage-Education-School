@@ -27,7 +27,11 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         600: {
+            slidesPerView: 1,
+        },
+        769: {
             slidesPerView: 2,
+
         }
     }
 });
@@ -35,17 +39,26 @@ var swiper = new Swiper(".mySwiper", {
 
 // Show/Hide nav menu
 const menu = document.querySelector('.container__menu');
-const menuBtn = document.querySelector('#open-menu-btn');
-const closeBtn = document.querySelector('#close-menu-btn');
+const menuBtn = document.querySelector('#menu-btn');
+const iconBtn = document.querySelector('.uil-bars')
 
 menuBtn.addEventListener('click', () => {
-    menu.style.display = "flex";
-    closeBtn.style.display = "inline-block";
-    menuBtn.style.display = "none";
+    // iconBtn === "uil-bars"
+    menu.classList.toggle("isActivade");
+    iconBtn.classList.toggle("uil-times");
+    // icon.classList.replace("uil-bars", "uil-times")
+    // closeBtn.style.display = "inline-block";
+    // menuBtn.style.display = "none";
 });
 
-closeBtn.addEventListener('click', () => {
-    menu.style.display = "none";
-    closeBtn.style.display = "none";
-    menuBtn.style.display = "inline-block";
-});
+// Get the browser window size
+
+
+function FuntionResize() {
+    const widthBrowser = window.outerWidth;
+    if (widthBrowser > 1024) {
+        menuBtn.style.display = "none";
+    } else {
+        menuBtn.style.display = "inline-block";
+    }
+}
