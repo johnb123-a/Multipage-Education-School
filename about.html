@@ -4,7 +4,136 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/css/style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Document</title>
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>About</title>
   </head>
-  <body></body>
+  <body onresize="FuntionResize()">
+    <nav class="nav">
+        <div class="container nav__container">
+            <a class="container--tittle" href="index.html""><h4>EGATOR</h4></a>
+            <ul class="container__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="container--button" id="menu-btn"><i class="uil uil-bars"></i></button>
+        </div>
+    </nav>
+    <main>
+      <section class="about">
+        <div class="container about__container">
+          <div class="container__achievements-left">
+            <img src="./assets/images/about achievements.svg" alt="">
+          </div>
+          <div class="container__achievements-right">
+            <h1 class="container__achievements-right--title">Acheivements</h1>
+            <p class="container__achievements-right--paragraph">
+              Nisi deserunt magna sunt in eiusmod ea aute in Lorem ex qui 
+              deserunt veniam. Sint exercitation pariatur exercitation aliquip 
+              eiusmod pariatur nulla. Sit dolore fugiat officia tempor. 
+              Duis non quis irure dolor.Sit cillum culpa ad ex est. Est minim eiusmod in esse eiusmod pariatur commodo id laborum ex ad magna voluptate amet. Pariatur amet cillum enim irure est exercitation quis esse. Anim voluptate culpa amet aute do. Exercitation do ullamco reprehenderit id elit id irure officia quis est do consectetur.
+            </p>
+            <div class="achievements__cards">
+              <article class="card">
+                <span class="card__icon">
+                  <i class="uil uil-video"></i>
+                </span>
+                <h3 class="card--value">450+</h3>
+                <p class="card--tag">Courses</p>
+              </article>
+              <article class="card">
+                <span class="card__icon">
+                  <i class="uil uil-users-alt"></i>
+                </span>
+                <h3 class="card--value">79,000+</h3>
+                <p class="card--tag">Students</p>
+              </article>
+              <article class="card">
+                <span class="card__icon">
+                  <i class="uil uil-award"></i>
+                </span>
+                <h3 class="card--value">26+</h3>
+                <p class="card--tag">Awards</p>
+              </article>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="index.html"><h4>EGATOR</h4></a>
+          <p class="footer__1--paragraph">
+            Laboris mollit officia et culpa ut. Lorem voluptate pariatur aliqua
+            Lorem dolor laboris eu nostrud. Do sint minim culpa eu nulla labore.
+            Adipisicing ea non commodo Lorem id amet ex culpa elit duis
+            voluptate. Aliqua ea eiusmod nulla eu magna ipsum enim ipsum
+            consectetur.
+          </p>
+        </div>
+
+        <div class="footer__2">
+          <h4 class="footer__2--title u-mb-md">Permalinks</h4>
+          <ul class="footer__2--links">
+            <li class="u-mb-sm"><a href="index.html">Home</a></li>
+            <li class="u-mb-sm"><a href="about.html">About</a></li>
+            <li class="u-mb-sm"><a href="courses.html">Courses</a></li>
+            <li class="u-mb-sm"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__3">
+          <h4 class="footer__3--title u-mb-md">Primacy</h4>
+          <ul class="footer__3--links">
+            <li class="u-mb-sm"><a href="#">Privacy Policy</a></li>
+            <li class="u-mb-sm"><a href="#">Terms and Conditions</a></li>
+            <li class="u-mb-sm"><a href="#">Refun Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__4">
+          <h4 class="footer__4--title u-mb-md">Contact Us</h4>
+          <div class="footer__4--info">
+            <p>+01 234 567 8910</p>
+            <p>shakir260@gmail.com</p>
+          </div>
+          <ul class="footer__4--social-links">
+            <li class="u-mb-sm">
+              <a href="#"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li class="u-mb-sm">
+              <a href="#"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li class="u-mb-sm">
+              <a href="#"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li class="u-mb-sm">
+              <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small
+          >Copyright <i class="uil uil-copyright"></i> EGATOR Youtube
+          Tutorials</small
+        >
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>

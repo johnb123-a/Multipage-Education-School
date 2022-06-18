@@ -1,0 +1,54 @@
+.about {
+  margin-top: 4rem;
+  &__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    .container {
+      &__achievements-right {
+        &--paragraph {
+          margin: 1.6rem 0 2.5rem;
+          font-size: 2rem;
+          line-height: 1.8;
+        }
+        .achievements__cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1.5rem;
+          .card {
+            background: $color-bg-2;
+            padding: 1.6rem;
+            border-radius: 1rem;
+            text-align: center;
+            transition: $transition;
+            &:hover {
+              background: $color-bg-3;
+              box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+            }
+            &:nth-child(2) .card__icon {
+              background: $color-success;
+            }
+            &:nth-child(3) .card__icon {
+              background: $color-primary;
+            }
+            &__icon {
+              font-size: 4.5rem;
+              background: $color-danger;
+              padding: 0rem 1rem;
+              border-radius: 1rem;
+              display: inline-block;
+              margin-bottom: 2rem;
+            }
+            &--value {
+              font-size: 3.5rem;
+            }
+            &--tag {
+              margin-top: 1rem;
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,11 +6,13 @@
 @import "./layouts/header";
 @import "./layouts/footer";
 
-@import "./components/nav";
-@import "./components/categories";
-@import "./components/courses";
-@import "./components/faqs";
-@import "./components/testimonials";
+@import "./components/pages/index/nav";
+@import "./components/pages/index/categories";
+@import "./components/pages/index/courses";
+@import "./components/pages/index/faqs";
+@import "./components/pages/index/testimonials";
+
+@import "./components/pages/about/achievements";
 
 @import "./abstracts/media";
 @import "./base/animations";
