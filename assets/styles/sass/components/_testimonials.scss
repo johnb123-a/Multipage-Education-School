@@ -3,6 +3,14 @@
   position: relative;
   margin-bottom: 5rem;
 
+  .swiper-pagination-bullet {
+    width: 25px;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: $color-primary;
+  }
+
   .container__testimonial {
     display: flex;
     flex-direction: column;
