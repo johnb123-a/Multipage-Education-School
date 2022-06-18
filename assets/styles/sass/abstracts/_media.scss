@@ -172,6 +172,26 @@
       }
     }
   }
+  // #########################################
+  .achievements {
+    margin-top: 4rem;
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      .container {
+        &__achievement-left {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 80%;
+            height: 80%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -393,6 +413,20 @@
 
           grid-row: 3/4;
           grid-column: 1/-1;
+        }
+      }
+    }
+  }
+
+  .achievements {
+    margin-top: 6rem;
+    &__container {
+      .container {
+        &__achievement-left {
+          img {
+            width: 90%;
+            height: 100%;
+          }
         }
       }
     }
