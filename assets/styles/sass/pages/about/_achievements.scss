@@ -1,17 +1,17 @@
-.about {
+.achievements {
   margin-top: 4rem;
   &__container {
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 5rem;
     .container {
-      &__achievements-right {
+      &__achievement-right {
         &--paragraph {
           margin: 1.6rem 0 2.5rem;
           font-size: 2rem;
           line-height: 1.8;
         }
-        .achievements__cards {
+        .achievement__cards {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 1.5rem;
